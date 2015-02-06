@@ -2,9 +2,6 @@
     <wb-module deploy-name="RESTfulWebServiceExample_Glassfish4">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <dependent-module archiveName="Converter.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Converter/Converter">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <property name="java-output-path" value="/RESTfulWebServiceExample_Glassfish4/build/classes"/>
         <property name="context-root" value="RESTfulWebServiceExample_Glassfish4"/>
     </wb-module>

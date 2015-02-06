@@ -9,9 +9,9 @@ import javax.ws.rs.core.MediaType;
 
 @Path("ConversionService")
 public class FeetToInchAndInchToFeetConversionService {
-	//http://localhost:50049/RESTfulWebServiceExample_Glassfish4/rest/ConversionService/InchToFeet/2
-	@GET
+	//http://localhost:8080/RESTfulWebServiceExample_Glassfish4/rest/ConversionService/InchToFeet/2
 	@Path("/InchToFeet/{i}")
+	@GET
 	@Produces(MediaType.TEXT_XML)
 	public String convertInchToFeet(@PathParam("i") int i){
 		int inch = i;
@@ -23,8 +23,9 @@ public class FeetToInchAndInchToFeetConversionService {
 				"</InchToFeetService>";
 	}
 	
-	@GET
+	//http://localhost:8080/RESTfulWebServiceExample_Glassfish4/rest/ConversionService/FeetToInch/2
 	@Path("/FeetToInch/{f}")
+	@GET
 	@Produces(MediaType.TEXT_XML)
 	public String convertFeetToInch(@PathParam("f") int f){
 		int feet = f;
