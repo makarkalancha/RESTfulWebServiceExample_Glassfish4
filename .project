@@ -3,7 +3,6 @@
 	<name>RESTfulWebServiceExample_Glassfish4</name>
 	<comment></comment>
 	<projects>
-		<project>Converter</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
